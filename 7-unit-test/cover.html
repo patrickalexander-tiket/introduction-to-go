@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>shape: Go Coverage Report</title>
+		<title>car: Go Coverage Report</title>
 		<style>
 			body {
 				background: black;
@@ -55,7 +55,7 @@
 			<div id="nav">
 				<select id="files">
 				
-				<option value="file0">github.com/patrickalexchan/introduction-to-go/7-unit-test/shape/circle.go (66.7%)</option>
+				<option value="file0">github.com/patrickalexchan/introduction-to-go/7-unit-test/resource/car/car.go (50.0%)</option>
 				
 				</select>
 			</div>
@@ -69,32 +69,47 @@
 		</div>
 		<div id="content">
 		
-		<pre class="file" id="file0" style="display: none">package shape
+		<pre class="file" id="file0" style="display: none">package car
 
-import (
-        "log"
-        "math"
-)
+import "errors"
 
-// Circle Struct
-type Circle struct {
-        Radius float64
+// Car Class contain of PlateNumber and color
+type Car struct {
+        PlateNumber string
+        Color       string
 }
 
-// New creates new circle
-func NewCircle(radius float64) Circle <span class="cov8" title="1">{
-        return Circle{
-                Radius: radius,
+// New creates new Car, dont need reference since the car will not modified
+func New(plateNumber string, color string) *Car <span class="cov8" title="1">{
+        return &amp;Car{
+                PlateNumber: plateNumber,
+                Color:       color,
         }
 }</span>
 
-func (c Circle) getArea() float64 <span class="cov8" title="1">{
-        return math.Pi * c.Radius * c.Radius
+func (c Car) color() string <span class="cov8" title="1">{
+        return c.Color
 }</span>
 
-// PrintArea to print circle size
-func (c Circle) PrintArea() <span class="cov0" title="0">{
-        log.Printf("Circle Area : %f", c.getArea())
+// GetColor to get the color of the car
+func (c Car) GetColor() string <span class="cov8" title="1">{
+        return c.color()
+}</span>
+
+// SetColor the color of the car
+func (c *Car) SetColor(color string) error <span class="cov0" title="0">{
+        if color == "" </span><span class="cov0" title="0">{
+                return errors.New("Must specify car color")
+        }</span>
+
+        <span class="cov0" title="0">c.Color = color
+
+        return nil</span>
+}
+
+// GetPlateNum to get plate number of the car
+func (c Car) GetPlateNum() string <span class="cov8" title="1">{
+        return c.PlateNumber
 }</span>
 </pre>
 		

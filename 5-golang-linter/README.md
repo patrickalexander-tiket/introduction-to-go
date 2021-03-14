@@ -18,7 +18,7 @@ Example : https://goreportcard.com/report/github.com/kubernetes/kubernetes
 
 ### Feature :
 - gofmt
-- go_vet 
+- [go_vet](https://golang.org/cmd/vet/) 
 - golint 
 - gocyclo 
 - ineffassign 
@@ -35,7 +35,7 @@ Example : https://goreportcard.com/report/github.com/kubernetes/kubernetes
 - deadcode - Finds unused code
 - errcheck - Errcheck is a program for checking for unchecked errors in go programs. These unchecked errors can be critical bugs in some cases
 - gosimple - Linter for Go source code that specializes in simplifying a code
-- govet - Vet examines Go source code and reports suspicious constructs, such as Printf calls whose arguments do not align with the format string
+- [govet](https://golang.org/cmd/vet/) - Vet examines Go source code and reports suspicious constructs, such as Printf calls whose arguments do not align with the format string
 - ineffassign - Detects when assignments to existing variables are not used
 - staticcheck - Staticcheck is a go vet on steroids, applying a ton of static analysis checks
 - structcheck - Finds unused struct fields

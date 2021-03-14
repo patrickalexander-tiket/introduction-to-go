@@ -14,10 +14,10 @@ https://github.com/kubernetes/kubernetes/tree/master/test
 ```> $ go test -v -race ./...```
 
 ### Specific test case
-```> $ go test -v shape/circle_test.go shape/circle.go -run=TestCircleAreaMultipleCase```
+```> $ go test -v resource/car/car_test.go resource/car/car.go -run=TestGetCarMultipleCase```
 
 ### Get File Coverage
-``` > $ go test -cover```
+``` > $ go test -cover ./... ```
 
 ### Generate HTML Coverage
 ``` 

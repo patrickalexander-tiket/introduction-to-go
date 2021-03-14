@@ -1,20 +1,15 @@
 package main
 
-import (
-	"log"
-
-	"github.com/patrickalexchan/introduction-to-go/2-private-vs-public/shape"
-)
+import "github.com/patrickalexchan/introduction-to-go/2-private-vs-public/resource/car"
 
 func main() {
-	rect := shape.Rectangle{Width: 7, Height: 8}
-	circ := shape.Circle{20}
-
-	// Public Function
-	rectArea := rect.Area()
-	log.Printf("Rectangle Area : %f \n", rectArea)
+	car := car.Car{"H 3 LLO", "Black"}
 
 	// Private Function
-	circ.PrintArea()
+	// just can be called from internal package itself
+	// carColor := car.color()
 
+	// Public Function
+	// can be called outside package
+	car.GetColor()
 }
