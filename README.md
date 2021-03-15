@@ -8,6 +8,10 @@ Short introduction to Golang Language.
 5. Golang Linter
 6. Go Doc
 7. Unit Test
-
 Bonus : 
 - Benchmarking
+
+TBD : 
+- Profiling
+- Context for Tracing
+- etc...

@@ -6,7 +6,7 @@ import (
 
 func TestNewCar(t *testing.T) {
 	actualResult := New("H 3 LLO", "White")
-	if &actualResult == nil {
+	if actualResult == nil {
 		t.Errorf("[TestNewCar] failed to create new car")
 	}
 }
@@ -27,10 +27,6 @@ func TestGetPlateNum(t *testing.T) {
 }
 
 func TestGetCarMultipleCase(t *testing.T) {
-	type args struct {
-		plateNumber string
-		color       string
-	}
 	tests := []struct {
 		name        string
 		plateNumber string

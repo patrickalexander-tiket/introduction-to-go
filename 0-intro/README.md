@@ -1,5 +1,4 @@
-# 0. Introduction :
-
+# 0-intro
 ## Why GO ?
 ### Why Google build Golang ?
 #### Pain Points 

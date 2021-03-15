@@ -1,4 +1,4 @@
-# 1-init()-vs-main()
+# 1-init-vs-main
 The Go language reserve two functions for special purpose and the functions are `main()` and `init()` function.
 
 ## main() function

@@ -1,4 +1,4 @@
-# Go Linter
+# 5-golang-Linter
 Just like in Javascript that using ESLint, Python that using Pylint, Golang also has some code quality tool to standarize :
 - Coding Standard 
 - Find Unused Code
@@ -29,8 +29,8 @@ Example : https://goreportcard.com/report/github.com/kubernetes/kubernetes
 ### Installation
 ```
 > $ go get github.com/golangci/golangci-lint/cmd/golangci-lint@v1.38.0
+> $ golangci-lint run
 ```
-
 ### Enabled By Default Linters
 - deadcode - Finds unused code
 - errcheck - Errcheck is a program for checking for unchecked errors in go programs. These unchecked errors can be critical bugs in some cases

@@ -1,4 +1,4 @@
-# 6. Godoc
+# 6-godoc
 
 ## How to documenting Go Code
 https://blog.golang.org/godoc
