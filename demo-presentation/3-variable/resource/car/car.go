@@ -22,18 +22,18 @@ func (c Car) color() string {
 
 // GetColor to get the color of the car
 func (c Car) GetColor() string {
-	return c.Color
+	return c.color()
 }
 
-// GetColor to get the color of the car
-func (c *Car) SetColor(color string) (car Car, err error) {
+// SetColor the color of the car
+func (c *Car) SetColor(color string) error {
 	if color == "" {
-		return car, errors.New("Must specify car color")
+		return errors.New("Must specify car color")
 	}
 
 	c.Color = color
 
-	return car, nil
+	return nil
 }
 
 // GetPlateNum to get plate number of the car

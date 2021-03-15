@@ -1,0 +1,35 @@
+Introduction to Go
+15 March 2021
+
+Patrick Alexander
+patrick.alexander@tiket.com
+
+* Golang Logo
+.image Golang-Logo.jpg
+
+* 1. Init vs Main
+.play 1-init-vs-main/main.go /^//START/,/^//END/ 
+
+* Init vs Main Flow
+.image init-main-flow.png
+
+* 2. Private vs Public
+.play 2-private-vs-public/main.go 
+
+* 2. Private vs Public
+.play 2-private-vs-public/resource/car/car.go /^//START/,/^//END/ HL12
+
+* 3. Variable
+.play 3-variable/main.go /^//START1/,/^//END1/ HL12
+.play 3-variable/main.go /^//START2/,/^//END2/ HL12
+
+* 3. Variable
+.play 3-variable/main.go /^//START3/,/^//END3/ HL12
+.play 3-variable/main.go /^//START4/,/^//END4/ HL12
+
+* 4. Functional Options
+.play 4-functional-options/main.go /^//START1/,/^//END1/ HL12
+
+* 4. Functional Options
+.play 4-functional-options/pkg/server/server.go /^//START1/,/^//END1/ HL12
+.play 4-functional-options/pkg/server/server.go /^//START2/,/^//END2/ HL12

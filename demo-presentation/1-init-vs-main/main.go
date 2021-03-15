@@ -1,3 +1,4 @@
+// START OMIT
 package main
 
 import (
@@ -11,7 +12,7 @@ func init() {
 }
 
 func init() {
-	log.Println("init() function in main() - 1")
+	log.Println("init() function in main() - 2")
 }
 
 func main() {
@@ -19,3 +20,5 @@ func main() {
 	log.Println(e.Echo())
 	log.Println("main func()")
 }
+
+// END OMIT

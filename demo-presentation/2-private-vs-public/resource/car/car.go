@@ -16,14 +16,17 @@ func New(plateNumber string, color string) *Car {
 	}
 }
 
-func (c Car) color() string {
+//START OMIT
+func (c Car) color() string { // HL12
 	return c.Color
-}
+} // HL12
 
 // GetColor to get the color of the car
-func (c Car) GetColor() string {
+func (c Car) GetColor() string { // HL12
 	return c.Color
-}
+} // HL12
+
+//END OMIT
 
 // GetColor to get the color of the car
 func (c *Car) SetColor(color string) (car Car, err error) {

@@ -1,4 +1,4 @@
-package entity
+package grpc
 
 const (
 	OK = iota
